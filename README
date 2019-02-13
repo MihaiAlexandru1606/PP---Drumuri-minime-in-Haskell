@@ -1,0 +1,32 @@
+------------------------    Paradigme de programare    -----------------------
+
+Tema 1 : Drumuri minime in Haskell
+Nume : Niculescu
+Prenume : Mihai Alexandru
+Grupa : 325CB
+Sistem de operare : Ubuntu 16.04 LTS 64bit 
+Editor : Visula Studio
+Fisiere: Tema1.hs
+
+-------------------------------------------------------------------------------
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<     Algoritm     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    Pentru acesta tema am implementa algoritmul Floyd-Warshal descris si preluat
+de la:
+https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
+https://ocw.cs.pub.ro/courses/pa/laboratoare/laborator-09
+	Pentru task 2 am pus conditia ca suma platita sa pana in 
+acel moment sa nu depasesca valoare maxima altfel drumul ajune sa aiba valoare
+inf, deci nu se poate ajunge pe acel drum.
+Pt amblele task-uri am folosit functia init_graph care creaza o matrice pentru 
+graf, din list de noduri primita ca input de functie. acesta foloste findValue
+care vede, in lista, daca exista nod intre i si j, daca da retuneza valoarea, 
+altfel inf.
+Pt task-ul 1 exita funtia floyd_warshall care primeste nodul de stat, nodul 
+destinatie si graful. In "path" nu se retin si capetel, se adauga la final.
+
+Pentru task-ul 2 am modificiat functia sa-mi restina si costul pana in acel punct
+(suma de bani), daca drumul o depaseste se returneaza inf. Pt reconstructie se
+foloseste functia create_list_cost.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
