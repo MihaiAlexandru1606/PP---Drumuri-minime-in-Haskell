@@ -16,6 +16,7 @@ Fisiere: Tema1.hs
 de la:
 https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
 https://ocw.cs.pub.ro/courses/pa/laboratoare/laborator-09
+https://www.schoolofhaskell.com/user/chad/snippets/shortest-path-floyd-warshall
 	Pentru task 2 am pus conditia ca suma platita sa pana in 
 acel moment sa nu depasesca valoare maxima altfel drumul ajune sa aiba valoare
 inf, deci nu se poate ajunge pe acel drum.
